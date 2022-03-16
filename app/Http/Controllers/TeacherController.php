@@ -77,4 +77,13 @@ class TeacherController extends Controller
             'message' => 'Teacher Deleted Successfully',
         ]);
     }
+    public function selectpage()
+    {
+        return view('Teacher.selector');
+    }
+    public function multiSelect(Request $req)
+    {
+        // return view('Teacher.selector');
+        dd($req->all());
+    }
 }
